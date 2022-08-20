@@ -53,11 +53,11 @@ public class PersonaController {
             try{
                 Encontrado.setApellido(persona.getApellido());
                 Encontrado.setDomicilio(persona.getDomicilio());
-                Encontrado.setFecha_nacimiento(persona.getFecha_nacimiento());
-                Encontrado.setImage_background_header(persona.getImage_background_header());
+                Encontrado.setTitulo(persona.getTitulo());
+                Encontrado.setTelefono(persona.getTelefono());
+                Encontrado.setPais(persona.getPais());
                 Encontrado.setImage_perfil(persona.getImage_perfil());
                 Encontrado.setMail(persona.getMail());
-                Encontrado.setNacionalidad(persona.getNacionalidad());
                 Encontrado.setNombres(persona.getNombres());
                 Encontrado.setSobre_mi(persona.getSobre_mi());
                 return new ResponseEntity<>(personaService.save(Encontrado), HttpStatus.CREATED);

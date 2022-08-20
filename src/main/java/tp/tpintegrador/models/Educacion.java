@@ -15,11 +15,9 @@ public class Educacion {
     private String institucion;
     private String titulo;
     private String imagen;
-    private String carrera;
-    private Float puntaje;
     private String inicio;
     private String fin;
-    private Boolean finalizada;
-    
+    private Integer porcentaje;
+    private Boolean completada;
     
 }

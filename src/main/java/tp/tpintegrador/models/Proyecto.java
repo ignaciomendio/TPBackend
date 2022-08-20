@@ -19,6 +19,7 @@ public class Proyecto {
     private String nombre;
     private String descripcion;
     private String projectLink;
+    private String imagen;
     
     
     

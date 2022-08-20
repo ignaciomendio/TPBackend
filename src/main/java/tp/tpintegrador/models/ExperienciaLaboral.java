@@ -19,5 +19,6 @@ public class ExperienciaLaboral {
     private String inicio;
     private String fin;
     private Boolean actual;
+    private String imagen;
     
 }

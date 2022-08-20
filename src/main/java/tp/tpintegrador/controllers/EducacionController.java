@@ -50,13 +50,12 @@ public class EducacionController {
         }
         else{
             try{
-                Encontrado.setCarrera(educacion.getCarrera());
                 Encontrado.setFin(educacion.getFin());
-                Encontrado.setFinalizada(educacion.getFinalizada());
+                Encontrado.setCompletada(educacion.getCompletada());
                 Encontrado.setImagen(educacion.getImagen());
                 Encontrado.setInicio(educacion.getInicio());
+                Encontrado.setFin(educacion.getFin());
                 Encontrado.setInstitucion(educacion.getInstitucion());
-                Encontrado.setPuntaje(educacion.getPuntaje());
                 Encontrado.setTitulo(educacion.getTitulo());
                 return new ResponseEntity<>(educacionService.save(Encontrado), HttpStatus.CREATED);
             }

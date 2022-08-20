@@ -56,6 +56,7 @@ public class ExperienciaLaboralController {
                 Encontrado.setFin(experiencia.getFin());
                 Encontrado.setFuncion(experiencia.getFuncion());
                 Encontrado.setInicio(experiencia.getInicio());
+                Encontrado.setImagen(experiencia.getImagen());
 
                 return new ResponseEntity<>(experienciaService.save(Encontrado), HttpStatus.CREATED);
             }

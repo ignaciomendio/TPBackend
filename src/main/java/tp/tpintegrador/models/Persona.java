@@ -15,14 +15,12 @@ public class Persona {
     private Long id;
     private String nombres;
     private String apellido;
-    private String fecha_nacimiento;
-    private String nacionalidad;
+    private String titulo; 
     private String mail;
+    private String telefono;
+    private String domicilio;
+    private String pais;
     private String sobre_mi;
-    private String image_background_header;
     private String image_perfil;
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="id_domicilio")
-    private Domicilio domicilio;
     
 }

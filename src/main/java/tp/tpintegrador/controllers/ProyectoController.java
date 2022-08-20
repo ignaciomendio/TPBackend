@@ -54,6 +54,7 @@ public class ProyectoController {
                 Encontrado.setDescripcion(proyecto.getDescripcion());
                 Encontrado.setNombre(proyecto.getNombre());
                 Encontrado.setProjectLink(proyecto.getProjectLink());
+                Encontrado.setImagen(proyecto.getImagen());
                 return new ResponseEntity<>(proyectoService.save(Encontrado), HttpStatus.CREATED);
             }
             catch (DataAccessException e){
