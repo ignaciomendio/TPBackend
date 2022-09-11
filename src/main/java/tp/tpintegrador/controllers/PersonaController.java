@@ -25,9 +25,11 @@ import tp.tpintegrador.services.PersonaService;
  *
  * @author imendiol
  */
-@CrossOrigin(origins={"*"})
+
+
 @RestController
 @RequestMapping("/api/persona")
+@CrossOrigin(origins={"*"})
 public class PersonaController {
     
     @Autowired 
